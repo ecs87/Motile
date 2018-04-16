@@ -1,5 +1,7 @@
 # Motile
 
+Linux Daemon: Compiled for Ubuntu 17.10 - https://github.com/ecs87/Motile/releases
+
 Hot/Cold Masternode Notes:
   In your Windows wallet open up the debug console (Help -> Debug Window -> Console (tab))
 
