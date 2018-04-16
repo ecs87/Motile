@@ -1,6 +1,6 @@
 # Motile
 
-Windows Masternode Notes:
+Hot/Cold Masternode Notes:
   In your Windows wallet open up the debug console (Help -> Debug Window -> Console (tab))
 
   Type masternode outputs, take note of this.
