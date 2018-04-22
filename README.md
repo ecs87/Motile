@@ -17,7 +17,8 @@ Hot/Cold Masternode Notes:
   
   If you're not used to setting up .conf files for masternodes here's a template for Motile:
   
-  rpcuser=YourRPCUserName \n
+  rpcuser=YourRPCUserName
+  
   rpcpassword=YourRPCPassword
   rpcport=7217
   port=7218
