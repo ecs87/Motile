@@ -9,7 +9,13 @@ Hot/Cold Masternode Notes:
 
   Type masternode genkey, also take note of this.
 
-  On your masternode type "nano /root/.Motile/Motile.conf" and add your "masternode genkey" from the previous step into the masternodeprivkey= field. Then Save it (CTRL+X -> Y -> ENTER) and stop the daemon: ./Motiled stop, then restart it: ./Motiled -daemon (press CTRL+C after the server has started to return back to the cmd line).
+  Login to your masternode and go to (or create) the directory where you want the daemon to reside. Run this: wget https://github.com/ecs87/Motile/releases/download/1/Motiled
+  
+  Then gain permissions by running: chmod 700 Motiled
+  
+  Run the daemon with: ./Motiled -daemon
+
+  Run "nano /root/.Motile/Motile.conf" and add your "masternode genkey" from the previous step into the masternodeprivkey= field. Then Save it (CTRL+X -> Y -> ENTER) and stop the daemon: ./Motiled stop, then restart it: ./Motiled -daemon (press CTRL+C after the server has started to return back to the cmd line).
 
   NOW on your windows wallet go to the Masternodes tab and click the Create... button.
 
