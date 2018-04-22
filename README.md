@@ -14,6 +14,20 @@ Hot/Cold Masternode Notes:
   Then gain permissions by running: chmod 700 Motiled
   
   Run the daemon with: ./Motiled -daemon
+  
+  If you're not used to setting up .conf files for masternodes here's a template for Motile:
+  
+  rpcuser=YourRPCUserName
+  rpcpassword=YourRPCPassword
+  rpcport=7217
+  port=7218
+  daemon=1
+  server=1
+  rpcallowip=127.0.0.1
+  testnet=0
+  masternode=1
+  masternodesoftlock=1
+  masternodeprivkey=WhatYouGotFromMasternodeGenkeyEarlier
 
   Run "nano /root/.Motile/Motile.conf" and add your "masternode genkey" from the previous step into the masternodeprivkey= field. Then Save it (CTRL+X -> Y -> ENTER) and stop the daemon: ./Motiled stop, then restart it: ./Motiled -daemon (press CTRL+C after the server has started to return back to the cmd line).
 
