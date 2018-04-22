@@ -17,17 +17,17 @@ Hot/Cold Masternode Notes:
   
   If you're not used to setting up .conf files for masternodes here's a template for Motile:
   
-    rpcuser=YourRPCUserName<br />
-    rpcpassword=YourRPCPassword<br />
-    rpcport=7217<br />
-    port=7218<br />
-    daemon=1<br />
-    server=1<br />
-    rpcallowip=127.0.0.1<br />
-    testnet=0<br />
-    masternode=1<br />
-    masternodesoftlock=1<br />
-    masternodeprivkey=WhatYouGotFromMasternodeGenkeyEarlier<br />
+    rpcuser=YourRPCUserName
+    rpcpassword=YourRPCPassword
+    rpcport=7217
+    port=7218
+    daemon=1
+    server=1
+    rpcallowip=127.0.0.1
+    testnet=0
+    masternode=1
+    masternodesoftlock=1
+    masternodeprivkey=WhatYouGotFromMasternodeGenkeyEarlier
 
   Run "nano /root/.Motile/Motile.conf" and add your "masternode genkey" from the previous step into the masternodeprivkey= field. Then Save it (CTRL+X -> Y -> ENTER) and stop the daemon: ./Motiled stop, then restart it: ./Motiled -daemon (press CTRL+C after the server has started to return back to the cmd line).
 
