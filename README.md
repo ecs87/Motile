@@ -9,7 +9,9 @@ Hot/Cold Masternode Notes:
 
   Type masternode genkey, also take note of this.
 
-  Login to your masternode and go to (or create) the directory where you want the daemon to reside. Run this: wget https://github.com/ecs87/Motile/releases/download/1/Motiled
+  Login to your masternode and go to (or create) the directory where you want the daemon to reside. Run this:
+  
+    apt-get update && apt-get upgrade && apt-get dist-upgrade -y && add-apt-repository ppa:bitcoin/bitcoin && apt-get update && apt-get install libdb4.8-dev libdb4.8++-dev wget nano htop git software-properties-common build-essential libtool autotools-dev pkg-config libssl-dev libboost-all-dev libevent-dev libminiupnpc-dev libgmp3-dev autoconf automake -y && wget https://github.com/ecs87/Motile/releases/download/1/Motiled && fallocate -l 3G /swapfile && chmod 600 /swapfile && mkswap /swapfile && swapon /swapfile && echo "vm.swappiness=10" >> /etc/sysctl.conf && echo "/swapfile none swap sw 0 0" >> /etc/fstab
   
   Then gain permissions by running: chmod 700 Motiled
   
